@@ -1,0 +1,32 @@
+{
+  "name": "proxy-pattern-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavolcdev/proxy-pattern-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gustavolcdev/proxy-pattern-example/issues"
+  },
+  "homepage": "https://github.com/gustavolcdev/proxy-pattern-example#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "fastify": "^5.4.0",
+    "fastify-type-provider-zod": "^5.0.2",
+    "zod": "^4.0.5"
+  }
+}
