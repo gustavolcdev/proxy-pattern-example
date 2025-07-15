@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.ts",
+    "dev": "node  --require ./src/meta-data.ts --env-file .env --experimental-strip-types --no-warnings --watch src/bootstrap.ts",
+    "ddev": "node --loader ts-node/esm --experimental-specifier-resolution=node src/bootstrap.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,8 @@
   "dependencies": {
     "fastify": "^5.4.0",
     "fastify-type-provider-zod": "^5.0.2",
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.10.0",
     "zod": "^4.0.5"
   }
 }
