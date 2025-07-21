@@ -1,19 +1,25 @@
 import ManageCustomersInterface from './../api/services/ManageCustomersInterface.ts'
+import Customer from './../api/CustomerInterface.ts'
 
 class ManageCustomers implements ManageCustomersInterface {
     
-    public execute(): Array<object> {
-        return [
+    public execute(): Array<Customer> {
+        const customers: Customer[] = [
             {
-                'foo':'bar'
+                name:'Client Foo',
+                gender:'M'
             },
             {
-                'bar':'foo'
+                name:'Client Bar',
+                gender:'F'
             },
             {
-               'foobar':'barfooddddd'
+               name:'Client foobarr',
+               gender: 'M'
             }
-        ]
+        ];
+
+        return customers
 
     }
 }

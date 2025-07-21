@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node  --require ./src/meta-data.ts --env-file .env --experimental-strip-types --no-warnings --watch src/bootstrap.ts",
-    "ddev": "node --loader ts-node/esm --experimental-specifier-resolution=node src/bootstrap.ts",
+    "dev": "node --loader ts-node/esm --experimental-specifier-resolution=node --no-warnings --watch src/bootstrap.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
